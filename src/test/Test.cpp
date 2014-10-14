@@ -1,8 +1,8 @@
 
 #include <iostream>
 #include <gtest/gtest.h>
-#include "../../include/MathUtilities.h"
-#include "../../include/Vector2.h"
+#include <MathUtilities.h>
+#include <Vector2.h>
 
 const double EPS = 1e-3;
 

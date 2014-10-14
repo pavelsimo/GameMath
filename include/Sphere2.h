@@ -1,7 +1,7 @@
 #ifndef SPHERE2_H
 #define SPHERE2_H
 
-#include "Vector2.h"
+#include <Vector2.h>
 
 namespace math 
 {

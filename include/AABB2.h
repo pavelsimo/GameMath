@@ -1,9 +1,9 @@
 #ifndef AABB2_H
 #define AABB2_H
 
-#include "Vector2.h"
-#include "MathUtilities.h"
 #include <limits>
+#include <Vector2.h>
+#include <MathUtilities.h>
 
 namespace math 
 {

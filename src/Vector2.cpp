@@ -1,7 +1,7 @@
 #include <cmath>
 #include <stdexcept>
-#include "../include/Vector2.h"
-#include "../include/MathUtilities.h"
+#include <Vector2.h>
+#include <MathUtilities.h>
 
 namespace math 
 {

@@ -1,4 +1,4 @@
-#include "../include/Sphere2.h"
+#include <Sphere2.h>
 
 namespace math 
 {   

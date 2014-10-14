@@ -1,4 +1,4 @@
-#include "../include/AABB2.h"
+#include <AABB2.h>
 
 namespace math 
 {

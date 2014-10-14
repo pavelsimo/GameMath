@@ -1,7 +1,7 @@
 #ifndef RAY2_H
 #define RAY2_H
 
-#include "Vector2.h"
+#include <Vector2.h>
 
 namespace math 
 {
