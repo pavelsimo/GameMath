@@ -2,21 +2,21 @@
 
 namespace math 
 {   
-	Sphere2::Sphere2() 
+    Sphere2::Sphere2() 
     : m_center(Vector2(0, 0)),
       m_radius(1.0f)
     {
         
     }
 
-	Sphere2::Sphere2(const Vector2& center, const real radius)
+    Sphere2::Sphere2(const Vector2& center, const real radius)
     : m_center(center),
       m_radius(radius)
     {
         
     }
     
-	Sphere2::~Sphere2()
+    Sphere2::~Sphere2()
     {
         
     }
