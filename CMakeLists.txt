@@ -1,9 +1,12 @@
 PROJECT(GameEngine)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+SET(CMAKE_BUILD_TYPE Release)
 
+# Setting Google Test
 FIND_PACKAGE(GTest REQUIRED)
 INCLUDE_DIRECTORIES(${GTEST_INCLUDE_DIRS})
 
+# Setting C++11
 INCLUDE(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
@@ -16,6 +19,7 @@ else()
 endif()
 
 
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 ADD_LIBRARY(
    GameMath SHARED
@@ -29,12 +33,7 @@ ADD_LIBRARY(
 ADD_EXECUTABLE(
    Test 
    src/test/Test.cpp
-   src/MathUtilities.cpp 
-   src/Vector2.cpp
-   src/AABB2.cpp 
-   src/Sphere2.cpp
-   src/Ray2.cpp
 )
 
-TARGET_LINK_LIBRARIES(Test ${GTEST_LIBRARIES} pthread)
+TARGET_LINK_LIBRARIES(Test GameMath ${GTEST_LIBRARIES} pthread)
 
